@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75B6685313E72C5E00360226 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B6685213E72C5E00360226 /* Cocoa.framework */; };
+		75B6685D13E72C5E00360226 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75B6685B13E72C5E00360226 /* InfoPlist.strings */; };
+		75B6685F13E72C5E00360226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B6685E13E72C5E00360226 /* main.m */; };
+		75B6686313E72C5E00360226 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 75B6686113E72C5E00360226 /* Credits.rtf */; };
+		75B6686613E72C5E00360226 /* CertDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B6686513E72C5E00360226 /* CertDocument.m */; };
+		75B6686913E72C5E00360226 /* CertDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B6686713E72C5E00360226 /* CertDocument.xib */; };
+		75B6686C13E72C5F00360226 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B6686A13E72C5F00360226 /* MainMenu.xib */; };
+		75B6686F13E72C5F00360226 /* CertDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B6686D13E72C5F00360226 /* CertDocument.xcdatamodeld */; };
+		75B6687713E72C6000360226 /* CertExaminerImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 75B6687413E72C6000360226 /* CertExaminerImporter.mdimporter */; };
+		75B6687913E72C6000360226 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B6687813E72C6000360226 /* CoreServices.framework */; };
+		75B6687B13E72C6000360226 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B6687A13E72C6000360226 /* CoreFoundation.framework */; };
+		75B6687D13E72C6000360226 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B6687C13E72C6000360226 /* CoreData.framework */; };
+		75B6687F13E72C6000360226 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B6687E13E72C6000360226 /* Foundation.framework */; };
+		75B6688513E72C6000360226 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75B6688313E72C6000360226 /* InfoPlist.strings */; };
+		75B6688713E72C6000360226 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 75B6688613E72C6000360226 /* main.c */; };
+		75B6688913E72C6000360226 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B6688813E72C6000360226 /* GetMetadataForFile.m */; };
+		75B6688C13E72C6000360226 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B6688B13E72C6000360226 /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75B6687513E72C6000360226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B6684513E72C5E00360226 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75B6687313E72C6000360226;
+			remoteInfo = CertExaminerImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75B6684E13E72C5E00360226 /* CertExaminer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CertExaminer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B6685213E72C5E00360226 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		75B6685513E72C5E00360226 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		75B6685613E72C5E00360226 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		75B6685713E72C5E00360226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75B6685A13E72C5E00360226 /* CertExaminer-Info.plist */ = {isa = PBXFileReference; path = "CertExaminer-Info.plist"; sourceTree = "<group>"; };
+		75B6685C13E72C5E00360226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75B6685E13E72C5E00360226 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75B6686013E72C5E00360226 /* CertExaminer-Prefix.pch */ = {isa = PBXFileReference; path = "CertExaminer-Prefix.pch"; sourceTree = "<group>"; };
+		75B6686213E72C5E00360226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		75B6686413E72C5E00360226 /* CertDocument.h */ = {isa = PBXFileReference; path = CertDocument.h; sourceTree = "<group>"; };
+		75B6686513E72C5E00360226 /* CertDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertDocument.m; sourceTree = "<group>"; };
+		75B6686813E72C5E00360226 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CertDocument.xib; sourceTree = "<group>"; };
+		75B6686B13E72C5F00360226 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		75B6686E13E72C5F00360226 /* CertDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CertDocument.xcdatamodel; sourceTree = "<group>"; };
+		75B6687413E72C6000360226 /* CertExaminerImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CertExaminerImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B6687813E72C6000360226 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		75B6687A13E72C6000360226 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		75B6687C13E72C6000360226 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		75B6687E13E72C6000360226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75B6688213E72C6000360226 /* CertExaminerImporter-Info.plist */ = {isa = PBXFileReference; path = "CertExaminerImporter-Info.plist"; sourceTree = "<group>"; };
+		75B6688413E72C6000360226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75B6688613E72C6000360226 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		75B6688813E72C6000360226 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		75B6688A13E72C6000360226 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		75B6688B13E72C6000360226 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		75B6688D13E72C6000360226 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		75B6688E13E72C6000360226 /* CertExaminerImporter-Prefix.pch */ = {isa = PBXFileReference; path = "CertExaminerImporter-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75B6684B13E72C5E00360226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6685313E72C5E00360226 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B6687113E72C6000360226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6687913E72C6000360226 /* CoreServices.framework in Frameworks */,
+				75B6687B13E72C6000360226 /* CoreFoundation.framework in Frameworks */,
+				75B6687D13E72C6000360226 /* CoreData.framework in Frameworks */,
+				75B6687F13E72C6000360226 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75B6684313E72C5E00360226 = {
+			isa = PBXGroup;
+			children = (
+				75B6685813E72C5E00360226 /* CertExaminer */,
+				75B6688013E72C6000360226 /* CertExaminerImporter */,
+				75B6685113E72C5E00360226 /* Frameworks */,
+				75B6684F13E72C5E00360226 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75B6684F13E72C5E00360226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B6684E13E72C5E00360226 /* CertExaminer.app */,
+				75B6687413E72C6000360226 /* CertExaminerImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B6685113E72C5E00360226 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75B6685213E72C5E00360226 /* Cocoa.framework */,
+				75B6687813E72C6000360226 /* CoreServices.framework */,
+				75B6687A13E72C6000360226 /* CoreFoundation.framework */,
+				75B6687C13E72C6000360226 /* CoreData.framework */,
+				75B6687E13E72C6000360226 /* Foundation.framework */,
+				75B6685413E72C5E00360226 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75B6685413E72C5E00360226 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75B6685513E72C5E00360226 /* AppKit.framework */,
+				75B6685613E72C5E00360226 /* CoreData.framework */,
+				75B6685713E72C5E00360226 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		75B6685813E72C5E00360226 /* CertExaminer */ = {
+			isa = PBXGroup;
+			children = (
+				75B6686413E72C5E00360226 /* CertDocument.h */,
+				75B6686513E72C5E00360226 /* CertDocument.m */,
+				75B6686713E72C5E00360226 /* CertDocument.xib */,
+				75B6686A13E72C5F00360226 /* MainMenu.xib */,
+				75B6686D13E72C5F00360226 /* CertDocument.xcdatamodeld */,
+				75B6685913E72C5E00360226 /* Supporting Files */,
+			);
+			path = CertExaminer;
+			sourceTree = "<group>";
+		};
+		75B6685913E72C5E00360226 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75B6685A13E72C5E00360226 /* CertExaminer-Info.plist */,
+				75B6685B13E72C5E00360226 /* InfoPlist.strings */,
+				75B6685E13E72C5E00360226 /* main.m */,
+				75B6686013E72C5E00360226 /* CertExaminer-Prefix.pch */,
+				75B6686113E72C5E00360226 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75B6688013E72C6000360226 /* CertExaminerImporter */ = {
+			isa = PBXGroup;
+			children = (
+				75B6688813E72C6000360226 /* GetMetadataForFile.m */,
+				75B6688A13E72C6000360226 /* MySpotlightImporter.h */,
+				75B6688B13E72C6000360226 /* MySpotlightImporter.m */,
+				75B6688D13E72C6000360226 /* Importer Read Me.txt */,
+				75B6688113E72C6000360226 /* Supporting Files */,
+			);
+			path = CertExaminerImporter;
+			sourceTree = "<group>";
+		};
+		75B6688113E72C6000360226 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75B6688213E72C6000360226 /* CertExaminerImporter-Info.plist */,
+				75B6688313E72C6000360226 /* InfoPlist.strings */,
+				75B6688613E72C6000360226 /* main.c */,
+				75B6688E13E72C6000360226 /* CertExaminerImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75B6684D13E72C5E00360226 /* CertExaminer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B6689413E72C6000360226 /* Build configuration list for PBXNativeTarget "CertExaminer" */;
+			buildPhases = (
+				75B6684A13E72C5E00360226 /* Sources */,
+				75B6684B13E72C5E00360226 /* Frameworks */,
+				75B6684C13E72C5E00360226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75B6687613E72C6000360226 /* PBXTargetDependency */,
+			);
+			name = CertExaminer;
+			productName = CertExaminer;
+			productReference = 75B6684E13E72C5E00360226 /* CertExaminer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75B6687313E72C6000360226 /* CertExaminerImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B6689113E72C6000360226 /* Build configuration list for PBXNativeTarget "CertExaminerImporter" */;
+			buildPhases = (
+				75B6687013E72C6000360226 /* Sources */,
+				75B6687113E72C6000360226 /* Frameworks */,
+				75B6687213E72C6000360226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CertExaminerImporter;
+			productName = CertExaminerImporter;
+			productReference = 75B6687413E72C6000360226 /* CertExaminerImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75B6684513E72C5E00360226 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Polymicro Systems";
+			};
+			buildConfigurationList = 75B6684813E72C5E00360226 /* Build configuration list for PBXProject "CertExaminer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75B6684313E72C5E00360226;
+			productRefGroup = 75B6684F13E72C5E00360226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75B6684D13E72C5E00360226 /* CertExaminer */,
+				75B6687313E72C6000360226 /* CertExaminerImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75B6684C13E72C5E00360226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6685D13E72C5E00360226 /* InfoPlist.strings in Resources */,
+				75B6686313E72C5E00360226 /* Credits.rtf in Resources */,
+				75B6686913E72C5E00360226 /* CertDocument.xib in Resources */,
+				75B6686C13E72C5F00360226 /* MainMenu.xib in Resources */,
+				75B6687713E72C6000360226 /* CertExaminerImporter.mdimporter in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B6687213E72C6000360226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6688513E72C6000360226 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75B6684A13E72C5E00360226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6685F13E72C5E00360226 /* main.m in Sources */,
+				75B6686613E72C5E00360226 /* CertDocument.m in Sources */,
+				75B6686F13E72C5F00360226 /* CertDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B6687013E72C6000360226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6688713E72C6000360226 /* main.c in Sources */,
+				75B6688913E72C6000360226 /* GetMetadataForFile.m in Sources */,
+				75B6688C13E72C6000360226 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75B6687613E72C6000360226 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75B6687313E72C6000360226 /* CertExaminerImporter */;
+			targetProxy = 75B6687513E72C6000360226 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75B6685B13E72C5E00360226 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B6685C13E72C5E00360226 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75B6686113E72C5E00360226 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B6686213E72C5E00360226 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		75B6686713E72C5E00360226 /* CertDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B6686813E72C5E00360226 /* en */,
+			);
+			name = CertDocument.xib;
+			sourceTree = "<group>";
+		};
+		75B6686A13E72C5F00360226 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B6686B13E72C5F00360226 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		75B6688313E72C6000360226 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B6688413E72C6000360226 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75B6688F13E72C6000360226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		75B6689013E72C6000360226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		75B6689213E72C6000360226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CertExaminerImporter/CertExaminerImporter-Prefix.pch";
+				INFOPLIST_FILE = "CertExaminerImporter/CertExaminerImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		75B6689313E72C6000360226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CertExaminerImporter/CertExaminerImporter-Prefix.pch";
+				INFOPLIST_FILE = "CertExaminerImporter/CertExaminerImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		75B6689513E72C6000360226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CertExaminer/CertExaminer-Prefix.pch";
+				INFOPLIST_FILE = "CertExaminer/CertExaminer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75B6689613E72C6000360226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CertExaminer/CertExaminer-Prefix.pch";
+				INFOPLIST_FILE = "CertExaminer/CertExaminer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75B6684813E72C5E00360226 /* Build configuration list for PBXProject "CertExaminer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B6688F13E72C6000360226 /* Debug */,
+				75B6689013E72C6000360226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B6689113E72C6000360226 /* Build configuration list for PBXNativeTarget "CertExaminerImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B6689213E72C6000360226 /* Debug */,
+				75B6689313E72C6000360226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75B6689413E72C6000360226 /* Build configuration list for PBXNativeTarget "CertExaminer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B6689513E72C6000360226 /* Debug */,
+				75B6689613E72C6000360226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75B6686D13E72C5F00360226 /* CertDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75B6686E13E72C5F00360226 /* CertDocument.xcdatamodel */,
+			);
+			currentVersion = 75B6686E13E72C5F00360226 /* CertDocument.xcdatamodel */;
+			path = CertDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75B6684513E72C5E00360226 /* Project object */;
+}
