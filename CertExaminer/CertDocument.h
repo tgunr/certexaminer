@@ -8,6 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CertDocument : NSPersistentDocument
+@class Certificate;
 
+@interface CertDocument : NSPersistentDocument {
+    Certificate *certificate; 
+    NSPathControl *certPathContol;
+    NSTextField *certRawText;
+    NSDictionaryController *certDictionaryController;
+}
+@property (strong) IBOutlet NSDictionaryController *certDictionaryController;
+@property (strong) IBOutlet NSPathControl *certPathContol;
+@property (strong) IBOutlet NSTextField *certRawText;
+- (void)pathControlClick;
+
+- (void)examineURL:(NSURL *)aURL;
 @end
