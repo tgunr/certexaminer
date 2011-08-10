@@ -9,5 +9,21 @@
 #import <Cocoa/Cocoa.h>
 
 @interface PrefsWindowController : NSWindowController
+{
+	NSMutableArray *sourceArray;
+	
+	NSTableView *sourcesTableView;
+	NSButton *addSourceButton;
+	NSButton *removeSourceButton;
+	NSButton *smartSerachButton;
+}
 
+@property (nonatomic, copy) NSMutableArray *sourceArray;
+@property (strong) IBOutlet NSTableView *sourcesTableView;
+@property (strong) IBOutlet NSButton *addSourceButton;
+@property (strong) IBOutlet NSButton *removeSourceButton;
+@property (strong) IBOutlet NSButton *smartSerachButton;
+- (IBAction)addButtonClick:(NSButton *)sender;
+- (IBAction)removeButtonClick:(NSButton *)sender;
+- (IBAction)smartSearchButtonClick:(NSButton *)sender;
 @end

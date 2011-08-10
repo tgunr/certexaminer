@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7515354D13F271F600C78A3C /* PMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515354C13F271F600C78A3C /* PMPath.m */; };
 		7571CAEF13F25192008A4648 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7571CAEE13F25192008A4648 /* Preferences.xib */; };
 		7571CAF313F251E8008A4648 /* PrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7571CAF213F251E8008A4648 /* PrefsWindowController.m */; };
 		75AC212713EA04DF000CEB48 /* CertExaminer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AC212613EA04DF000CEB48 /* CertExaminer.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7515354B13F271F600C78A3C /* PMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPath.h; sourceTree = "<group>"; };
+		7515354C13F271F600C78A3C /* PMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPath.m; sourceTree = "<group>"; };
 		7571CAEE13F25192008A4648 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		7571CAF113F251E8008A4648 /* PrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsWindowController.h; sourceTree = "<group>"; };
 		7571CAF213F251E8008A4648 /* PrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsWindowController.m; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 		75B6685813E72C5E00360226 /* CertExaminer */ = {
 			isa = PBXGroup;
 			children = (
+				7515354B13F271F600C78A3C /* PMPath.h */,
+				7515354C13F271F600C78A3C /* PMPath.m */,
 				75DC552A13EC512C0074D83F /* CertExaminer.entitlements */,
 				75B668B913E88ACC00360226 /* PMShell.h */,
 				75B668BA13E88ACC00360226 /* PMShell.m */,
@@ -173,11 +178,11 @@
 				75B6686513E72C5E00360226 /* CertDocument.m */,
 				75AC212513EA04DF000CEB48 /* CertExaminer.h */,
 				75AC212613EA04DF000CEB48 /* CertExaminer.m */,
+				7571CAF113F251E8008A4648 /* PrefsWindowController.h */,
+				7571CAF213F251E8008A4648 /* PrefsWindowController.m */,
 				75AC212413EA0300000CEB48 /* Resources */,
 				75B6686D13E72C5F00360226 /* CertDocument.xcdatamodeld */,
 				75B6685913E72C5E00360226 /* Supporting Files */,
-				7571CAF113F251E8008A4648 /* PrefsWindowController.h */,
-				7571CAF213F251E8008A4648 /* PrefsWindowController.m */,
 			);
 			path = CertExaminer;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				75B6689913E7333400360226 /* Certificate.m in Sources */,
 				75AC212713EA04DF000CEB48 /* CertExaminer.m in Sources */,
 				7571CAF313F251E8008A4648 /* PrefsWindowController.m in Sources */,
+				7515354D13F271F600C78A3C /* PMPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

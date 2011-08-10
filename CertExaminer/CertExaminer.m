@@ -49,6 +49,8 @@
 }
 
 #pragma mark - Table View Delegate
+
+#pragma mark - Table View Datasource
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
 {
 	return [files count];
@@ -63,6 +65,8 @@
 {
 	
 }
+
+#pragma mark IBActions
 
 - (IBAction)infoToolBarItemClick:(NSToolbarItem *)sender {
 }
@@ -80,7 +84,7 @@
 }
 
 - (IBAction)prefsToolBarItemClick:(NSToolbarItem *)sender {
-	NSNib *nib = [[NSNib alloc] initWithNibNamed:@"Preferences" bundle:nil];
+	//	NSNib *nib = [[NSNib alloc] initWithNibNamed:@"Preferences" bundle:nil];
 	
     // At this pint, our outlets to inside this nib will be properly setup. It is important to note
     // that they will get overwritten when this is called again!
@@ -88,7 +92,9 @@
     // You will normally pass that controller as the 'owner'. For simplicity purposes we are passing
     // in this object as the owner.
     //
-    [nib instantiateNibWithOwner:self topLevelObjects:nil];
+	prefsWindowController = [[PrefsWindowController alloc] initWithWindowNibName:@"Preferences"];
+	prefsWindow = [prefsWindowController window];
+	//    [nib instantiateNibWithOwner:prefsWindowController topLevelObjects:nil];
     [prefsWindow makeKeyAndOrderFront:nil];
 }
 
