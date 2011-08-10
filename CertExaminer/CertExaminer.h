@@ -20,6 +20,5 @@
 @property (strong) IBOutlet NSPathControl *certFolder;
 @property (strong) IBOutlet NSTableView *certsTableView;
 @property (nonatomic, copy) NSArray *files;
-- (IBAction)certFileSelected:(id)sender;
 
 @end

@@ -17,11 +17,6 @@
 
 -(void)awakeFromNib
 {
-    
-}
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
     [certFolder setURL:[NSURL URLWithString:@"file:///etc/certificates"]];
 	NSFileManager *fm = [NSFileManager defaultManager];
 	BOOL isFolder;
@@ -32,10 +27,14 @@
 							   nil];
 		NSError *errResult;
 		files = [fm contentsOfDirectoryAtURL:[certFolder URL] 
-						   includingPropertiesForKeys:properties 
-											  options:NSDirectoryEnumerationSkipsHiddenFiles
-												error:&errResult];
+				  includingPropertiesForKeys:properties 
+									 options:NSDirectoryEnumerationSkipsHiddenFiles
+									   error:&errResult];
 	}
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
 }
 
 #pragma mark - Table View Delegate
@@ -49,6 +48,8 @@
 	NSString *fileName = [[files objectAtIndex:rowIndex] path];
 	return fileName;
 }
-- (IBAction)certFileSelected:(id)sender {
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification
+{
+	
 }
 @end
