@@ -14,6 +14,13 @@
 @synthesize certsTableView;
 @synthesize certFolder;
 @synthesize files;
+@synthesize infoToolBarItem;
+@synthesize addToolBarItem;
+@synthesize removeToolBarItem;
+@synthesize quickLookToolBarItem;
+@synthesize findToolBarItem;
+@synthesize prefsToolBarItem;
+@synthesize compareToolBarItem;
 
 -(void)awakeFromNib
 {
@@ -51,5 +58,26 @@
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification
 {
 	
+}
+
+- (IBAction)infoToolBarItemClick:(NSToolbarItem *)sender {
+}
+
+- (IBAction)addToolBarItemClick:(NSToolbarItem *)sender {
+}
+
+- (IBAction)removeToolBarItemClick:(NSToolbarItem *)sender {
+}
+
+- (IBAction)quickLookToolBarItemClick:(NSToolbarItem *)sender {
+}
+
+- (IBAction)findToolBarItemClick:(NSToolbarItem *)sender {
+}
+
+- (IBAction)prefsToolBarItemClick:(NSToolbarItem *)sender {
+}
+
+- (IBAction)compare:(NSToolbarItem *)sender {
 }
 @end

@@ -106,8 +106,8 @@
 		75AC212413EA0300000CEB48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				75B6686713E72C5E00360226 /* CertDocument.xib */,
 				75B6686A13E72C5F00360226 /* MainMenu.xib */,
+				75B6686713E72C5E00360226 /* CertDocument.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
