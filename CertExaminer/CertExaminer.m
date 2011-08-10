@@ -7,6 +7,7 @@
 //
 
 #import "CertExaminer.h"
+#import "PrefsWindowController.h"
 
 @implementation CertExaminer
 
@@ -21,6 +22,9 @@
 @synthesize findToolBarItem;
 @synthesize prefsToolBarItem;
 @synthesize compareToolBarItem;
+
+@synthesize prefsWindow;
+@synthesize prefsWindowController;
 
 -(void)awakeFromNib
 {
@@ -76,6 +80,16 @@
 }
 
 - (IBAction)prefsToolBarItemClick:(NSToolbarItem *)sender {
+	NSNib *nib = [[NSNib alloc] initWithNibNamed:@"Preferences" bundle:nil];
+	
+    // At this pint, our outlets to inside this nib will be properly setup. It is important to note
+    // that they will get overwritten when this is called again!
+    // In general, it is good practice to use a unique controller object for each nib you load.
+    // You will normally pass that controller as the 'owner'. For simplicity purposes we are passing
+    // in this object as the owner.
+    //
+    [nib instantiateNibWithOwner:self topLevelObjects:nil];
+    [prefsWindow makeKeyAndOrderFront:nil];
 }
 
 - (IBAction)compare:(NSToolbarItem *)sender {

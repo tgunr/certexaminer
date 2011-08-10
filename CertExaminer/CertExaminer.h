@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class PrefsWindowController;
+
 @interface CertExaminer : NSObject <NSApplicationDelegate>
 {
 	NSWindow *window;	
@@ -21,6 +23,10 @@
 	NSToolbarItem *findToolBarItem;
 	NSToolbarItem *prefsToolBarItem;
 	NSToolbarItem *compareToolBarItem;
+
+	NSWindow *prefsWindow;
+	PrefsWindowController *prefsWindowController;
+
 }
 
 @property (strong) IBOutlet NSWindow *window;
@@ -35,6 +41,9 @@
 @property (strong) IBOutlet NSToolbarItem *findToolBarItem;
 @property (strong) IBOutlet NSToolbarItem *prefsToolBarItem;
 @property (strong) IBOutlet NSToolbarItem *compareToolBarItem;
+
+@property (strong) IBOutlet NSWindow *prefsWindow;
+@property (nonatomic, retain) PrefsWindowController *prefsWindowController;
 
 - (IBAction)infoToolBarItemClick:(NSToolbarItem *)sender;
 - (IBAction)addToolBarItemClick:(NSToolbarItem *)sender;
