@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7515354D13F271F600C78A3C /* PMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515354C13F271F600C78A3C /* PMPath.m */; };
+		7515355013F28D6800C78A3C /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7515354F13F28D6800C78A3C /* UserDefaults.plist */; };
 		7571CAEF13F25192008A4648 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7571CAEE13F25192008A4648 /* Preferences.xib */; };
 		7571CAF313F251E8008A4648 /* PrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7571CAF213F251E8008A4648 /* PrefsWindowController.m */; };
 		75AC212713EA04DF000CEB48 /* CertExaminer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AC212613EA04DF000CEB48 /* CertExaminer.m */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		7515354B13F271F600C78A3C /* PMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPath.h; sourceTree = "<group>"; };
 		7515354C13F271F600C78A3C /* PMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPath.m; sourceTree = "<group>"; };
+		7515354F13F28D6800C78A3C /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
 		7571CAEE13F25192008A4648 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		7571CAF113F251E8008A4648 /* PrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsWindowController.h; sourceTree = "<group>"; };
 		7571CAF213F251E8008A4648 /* PrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsWindowController.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				75B6686A13E72C5F00360226 /* MainMenu.xib */,
 				75B6686713E72C5E00360226 /* CertDocument.xib */,
 				7571CAEE13F25192008A4648 /* Preferences.xib */,
+				7515354F13F28D6800C78A3C /* UserDefaults.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				75B6686C13E72C5F00360226 /* MainMenu.xib in Resources */,
 				75B6687713E72C6000360226 /* CertExaminerImporter.mdimporter in Resources */,
 				7571CAEF13F25192008A4648 /* Preferences.xib in Resources */,
+				7515355013F28D6800C78A3C /* UserDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

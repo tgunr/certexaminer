@@ -25,6 +25,76 @@
 
 @synthesize prefsWindow;
 @synthesize prefsWindowController;
+@synthesize userDefaultsController;
+
+static CertExaminer *sharedInstance = nil; 
+
++ (void)setupDefaults
+{
+    NSString *userDefaultsValuesPath;
+    NSDictionary *userDefaultsValuesDict;
+//    NSDictionary *initialValuesDict;
+//    NSArray *resettableUserDefaultsKeys;
+	
+    // load the default values for the user defaults
+    userDefaultsValuesPath=[[NSBundle mainBundle] pathForResource:@"UserDefaults"
+														   ofType:@"plist"];
+    userDefaultsValuesDict=[NSDictionary dictionaryWithContentsOfFile:userDefaultsValuesPath];
+	
+    // set them in the standard user defaults
+    [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsValuesDict];
+	
+    // if your application supports resetting a subset of the defaults to
+    // factory values, you should set those values
+    // in the shared user defaults controller
+//    resettableUserDefaultsKeys=[NSArray arrayWithObjects:@"Value1",@"Value2",@"Value3",nil];
+//    initialValuesDict=[userDefaultsValuesDict dictionaryWithValuesForKeys:resettableUserDefaultsKeys];
+//	
+    // Set the initial values in the shared user defaults controller
+//    [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:initialValuesDict];
+}
+
++ (void)initialize
+{
+    if (sharedInstance == nil)
+        sharedInstance = [[self alloc] init];
+	[self setupDefaults];
+}
+
++ (id)sharedCertExaminer
+{
+    //Already set by +initialize.
+    return sharedInstance;
+}
+
++ (id)allocWithZone:(NSZone*)zone
+{
+    //Usually already set by +initialize.
+    @synchronized(self) {
+        if (sharedInstance) {
+            //The caller expects to receive a new object, so implicitly retain it
+            //to balance out the eventual release message.
+            return sharedInstance;
+        } else {
+            //When not already set, +initialize is our caller.
+            //It's creating the shared instance, let this go through.
+            return [super allocWithZone:zone];
+        }
+    }
+}
+
+- (id)init
+{
+    //If sharedInstance is nil, +initialize is our caller, so initialize the instance.
+    //If it is not nil, simply return the instance without re-initializing it.
+    if (sharedInstance == nil) {
+		self = [super init];
+		if (self) {
+			userDefaults = [NSUserDefaults standardUserDefaults];
+        }
+    }
+    return self;
+}
 
 -(void)awakeFromNib
 {

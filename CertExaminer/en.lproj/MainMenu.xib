@@ -11,25 +11,26 @@
 			<string key="NS.object.0">1891</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>NSToolbar</string>
-			<string>NSScroller</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>NSMenuItem</string>
 			<string>NSMenu</string>
-			<string>NSScrollView</string>
-			<string>NSPathCell</string>
-			<string>NSTextFieldCell</string>
-			<string>NSToolbarSpaceItem</string>
-			<string>NSTableView</string>
 			<string>IBNSLayoutConstraint</string>
-			<string>NSPathControl</string>
+			<string>NSToolbarItem</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>NSCustomObject</string>
+			<string>NSTableView</string>
 			<string>NSSearchField</string>
 			<string>NSSearchFieldCell</string>
-			<string>NSCustomObject</string>
-			<string>NSView</string>
 			<string>NSWindowTemplate</string>
+			<string>NSTextFieldCell</string>
 			<string>NSTableColumn</string>
-			<string>NSToolbarItem</string>
+			<string>NSToolbarSpaceItem</string>
+			<string>NSView</string>
+			<string>NSToolbar</string>
+			<string>NSScrollView</string>
+			<string>NSUserDefaultsController</string>
+			<string>NSPathControl</string>
+			<string>NSScroller</string>
+			<string>NSMenuItem</string>
+			<string>NSPathCell</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1352,10 +1353,9 @@
 							<string key="NSToolbarItemPaletteLabel">Find</string>
 							<nil key="NSToolbarItemToolTip"/>
 							<object class="NSSearchField" key="NSToolbarItemView" id="494739610">
-								<reference key="NSNextResponder"/>
+								<nil key="NSNextResponder"/>
 								<int key="NSvFlags">268</int>
 								<string key="NSFrame">{{0, 14}, {96, 22}}</string>
-								<reference key="NSSuperview"/>
 								<string key="NSReuseIdentifierKey">_NS:123</string>
 								<bool key="NSEnabled">YES</bool>
 								<object class="NSSearchFieldCell" key="NSCell" id="749582909">
@@ -1525,13 +1525,13 @@
 						</object>
 						<object class="NSToolbarItem" key="NSToolbarCustomizeToolbarItem" id="994833103">
 							<string key="NSToolbarItemIdentifier">NSToolbarCustomizeToolbarItem</string>
-							<string key="NSToolbarItemLabel">Compare</string>
-							<string key="NSToolbarItemPaletteLabel">Compare</string>
+							<string key="NSToolbarItemLabel">Customize</string>
+							<string key="NSToolbarItemPaletteLabel">Customize</string>
 							<string key="NSToolbarItemToolTip">Customize Toolbar</string>
 							<nil key="NSToolbarItemView"/>
 							<object class="NSCustomResource" key="NSToolbarItemImage">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">NSPathTemplate</string>
+								<string key="NSResourceName">NSToolbarCustomizeToolbarItemImage</string>
 							</object>
 							<nil key="NSToolbarItemTarget"/>
 							<string key="NSToolbarItemAction">runToolbarCustomizationPalette:</string>
@@ -1598,7 +1598,7 @@
 							</object>
 						</object>
 					</dictionary>
-					<array class="NSMutableArray" key="NSToolbarIBAllowedItems">
+					<array key="NSToolbarIBAllowedItems">
 						<reference ref="362121219"/>
 						<reference ref="871446940"/>
 						<reference ref="531916651"/>
@@ -1609,13 +1609,12 @@
 						<reference ref="290276994"/>
 						<reference ref="994833103"/>
 					</array>
-					<array key="NSToolbarIBDefaultItems">
+					<array class="NSMutableArray" key="NSToolbarIBDefaultItems">
 						<reference ref="299289276"/>
 						<reference ref="1050963223"/>
 						<reference ref="531916651"/>
 						<reference ref="675615917"/>
 						<reference ref="362121219"/>
-						<reference ref="994833103"/>
 						<reference ref="531916651"/>
 						<reference ref="368768488"/>
 						<reference ref="290276994"/>
@@ -1640,7 +1639,6 @@
 											<int key="NSvFlags">256</int>
 											<string key="NSFrameSize">{524, 645}</string>
 											<reference key="NSSuperview" ref="694539623"/>
-											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="668005699"/>
 											<string key="NSReuseIdentifierKey">_NS:1196</string>
 											<bool key="NSEnabled">YES</bool>
@@ -1724,7 +1722,6 @@
 									</array>
 									<string key="NSFrame">{{1, 1}, {524, 645}}</string>
 									<reference key="NSSuperview" ref="256676912"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="769580701"/>
 									<string key="NSReuseIdentifierKey">_NS:1194</string>
 									<reference key="NSDocView" ref="769580701"/>
@@ -1736,7 +1733,6 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{224, 17}, {15, 102}}</string>
 									<reference key="NSSuperview" ref="256676912"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="153717043"/>
 									<string key="NSReuseIdentifierKey">_NS:1213</string>
 									<reference key="NSTarget" ref="256676912"/>
@@ -1749,7 +1745,6 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {238, 15}}</string>
 									<reference key="NSSuperview" ref="256676912"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="694539623"/>
 									<string key="NSReuseIdentifierKey">_NS:1215</string>
 									<int key="NSsFlags">1</int>
@@ -1760,7 +1755,6 @@
 							</array>
 							<string key="NSFrame">{{20, 45}, {526, 647}}</string>
 							<reference key="NSSuperview" ref="764586977"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="933281780"/>
 							<string key="NSReuseIdentifierKey">_NS:1192</string>
 							<int key="NSsFlags">133682</int>
@@ -1778,7 +1772,6 @@
 							</set>
 							<string key="NSFrame">{{19, 18}, {529, 20}}</string>
 							<reference key="NSSuperview" ref="764586977"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:3160</string>
 							<bool key="NSEnabled">YES</bool>
@@ -1827,7 +1820,6 @@
 					</array>
 					<string key="NSFrameSize">{565, 712}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="256676912"/>
 					<string key="NSReuseIdentifierKey">_NS:2817</string>
 				</object>
@@ -1840,6 +1832,9 @@
 			</object>
 			<object class="NSCustomObject" id="739804602">
 				<string key="NSClassName">NSFontManager</string>
+			</object>
+			<object class="NSUserDefaultsController" id="558980760">
+				<bool key="NSAppliesImmediately">YES</bool>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -2659,6 +2654,14 @@
 						<reference key="destination" ref="994833103"/>
 					</object>
 					<int key="connectionID">842</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">userDefaultsController</string>
+						<reference key="source" ref="174914927"/>
+						<reference key="destination" ref="558980760"/>
+					</object>
+					<int key="connectionID">844</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3937,6 +3940,11 @@
 						<reference key="object" ref="994833103"/>
 						<reference key="parent" ref="317295334"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">843</int>
+						<reference key="object" ref="558980760"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -4130,117 +4138,17 @@
 				<string key="827.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="828.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="83.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="843.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="92.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">842</int>
+			<int key="maxID">844</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">CertExaminer</string>
-					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="addToolBarItemClick:">NSToolbarItem</string>
-						<string key="compare:">NSToolbarItem</string>
-						<string key="findToolBarItemClick:">NSToolbarItem</string>
-						<string key="infoToolBarItemClick:">NSToolbarItem</string>
-						<string key="prefsToolBarItemClick:">NSToolbarItem</string>
-						<string key="quickLookToolBarItemClick:">NSToolbarItem</string>
-						<string key="removeToolBarItemClick:">NSToolbarItem</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="addToolBarItemClick:">
-							<string key="name">addToolBarItemClick:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBActionInfo" key="compare:">
-							<string key="name">compare:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBActionInfo" key="findToolBarItemClick:">
-							<string key="name">findToolBarItemClick:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBActionInfo" key="infoToolBarItemClick:">
-							<string key="name">infoToolBarItemClick:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBActionInfo" key="prefsToolBarItemClick:">
-							<string key="name">prefsToolBarItemClick:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBActionInfo" key="quickLookToolBarItemClick:">
-							<string key="name">quickLookToolBarItemClick:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBActionInfo" key="removeToolBarItemClick:">
-							<string key="name">removeToolBarItemClick:</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="addToolBarItem">NSToolbarItem</string>
-						<string key="certFolder">NSPathControl</string>
-						<string key="certsTableView">NSTableView</string>
-						<string key="compareToolBarItem">NSToolbarItem</string>
-						<string key="findToolBarItem">NSToolbarItem</string>
-						<string key="infoToolBarItem">NSToolbarItem</string>
-						<string key="prefsToolBarItem">NSToolbarItem</string>
-						<string key="quickLookToolBarItem">NSToolbarItem</string>
-						<string key="removeToolBarItem">NSToolbarItem</string>
-						<string key="window">NSWindow</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="addToolBarItem">
-							<string key="name">addToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="certFolder">
-							<string key="name">certFolder</string>
-							<string key="candidateClassName">NSPathControl</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="certsTableView">
-							<string key="name">certsTableView</string>
-							<string key="candidateClassName">NSTableView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="compareToolBarItem">
-							<string key="name">compareToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="findToolBarItem">
-							<string key="name">findToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="infoToolBarItem">
-							<string key="name">infoToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="prefsToolBarItem">
-							<string key="name">prefsToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="quickLookToolBarItem">
-							<string key="name">quickLookToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="removeToolBarItem">
-							<string key="name">removeToolBarItem</string>
-							<string key="candidateClassName">NSToolbarItem</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="window">
-							<string key="name">window</string>
-							<string key="candidateClassName">NSWindow</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/CertExaminer.h</string>
-					</object>
-				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">FirstResponder</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -4257,55 +4165,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBUserSource</string>
 						<string key="minorKey"/>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSDocument</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="printDocument:">id</string>
-						<string key="revertDocumentToSaved:">id</string>
-						<string key="runPageLayout:">id</string>
-						<string key="saveDocument:">id</string>
-						<string key="saveDocumentAs:">id</string>
-						<string key="saveDocumentTo:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="printDocument:">
-							<string key="name">printDocument:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="revertDocumentToSaved:">
-							<string key="name">revertDocumentToSaved:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="runPageLayout:">
-							<string key="name">runPageLayout:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveDocument:">
-							<string key="name">saveDocument:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveDocumentAs:">
-							<string key="name">saveDocumentAs:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveDocumentTo:">
-							<string key="name">saveDocumentTo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NSDocument.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSLayoutConstraint</string>
-					<string key="superclassName">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NSLayoutConstraint.h</string>
 					</object>
 				</object>
 			</array>
@@ -4327,10 +4186,10 @@
 			<string key="NSInfo">{32, 32}</string>
 			<string key="NSMenuCheckmark">{9, 8}</string>
 			<string key="NSMenuMixedState">{7, 2}</string>
-			<string key="NSPathTemplate">{13, 10}</string>
 			<string key="NSPreferencesGeneral">{32, 32}</string>
 			<string key="NSQuickLookTemplate">{21, 16}</string>
 			<string key="NSRemoveTemplate">{8, 8}</string>
+			<string key="NSToolbarCustomizeToolbarItemImage">{32, 32}</string>
 		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 	</data>

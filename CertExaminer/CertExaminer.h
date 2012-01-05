@@ -26,6 +26,9 @@
 
 	NSWindow *prefsWindow;
 	PrefsWindowController *prefsWindowController;
+	NSUserDefaultsController *userDefaultsController;
+	
+	NSUserDefaults *userDefaults;
 
 }
 
@@ -44,6 +47,7 @@
 
 @property (strong) IBOutlet NSWindow *prefsWindow;
 @property (nonatomic, retain) PrefsWindowController *prefsWindowController;
+@property (strong) IBOutlet NSUserDefaultsController *userDefaultsController;
 
 - (IBAction)infoToolBarItemClick:(NSToolbarItem *)sender;
 - (IBAction)addToolBarItemClick:(NSToolbarItem *)sender;
@@ -53,4 +57,6 @@
 - (IBAction)prefsToolBarItemClick:(NSToolbarItem *)sender;
 - (IBAction)compare:(NSToolbarItem *)sender;
 
++ (void)setupDefaults;
++ (id)sharedCertExaminer;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PrefsWindowController.h"
+#import "CertExaminer.h"
 
 @implementation PrefsWindowController
 @synthesize sourceArray;
@@ -20,6 +21,7 @@
     self = [super initWithWindow:window];
     if (self) {
 		sourceArray = [NSMutableArray arrayWithCapacity:1];
+		defaultsController = [[CertExaminer sharedCertExaminer] userDefaultsController];
     }
     
     return self;
@@ -30,6 +32,8 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+	NSArray *paths = [[defaultsController values]  valueForKey:@"sourcePaths"];
+	[sourceArray addObjectsFromArray: paths];
 }
 
 - (IBAction)addButtonClick:(NSButton *)sender
@@ -51,7 +55,8 @@
 				} else
 					sourceUrl = [aUrl copy];
 				if ( ! [sourceArray containsObject:sourceUrl] ) {
-					[sourceArray addObject:sourceUrl];
+					[sourceArray addObject:[sourceUrl path]];
+					[[defaultsController values] setObject:sourceArray forKey:@"sourcePaths"];
 				}
 			}
 			[sourcesTableView reloadData];

@@ -11,7 +11,8 @@
 @interface PrefsWindowController : NSWindowController
 {
 	NSMutableArray *sourceArray;
-	
+	NSUserDefaultsController *defaultsController;
+
 	NSTableView *sourcesTableView;
 	NSButton *addSourceButton;
 	NSButton *removeSourceButton;
